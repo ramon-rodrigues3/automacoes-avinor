@@ -83,7 +83,7 @@ async def reprovar_cadastro(id: str):
     
     etapa = card.get('STAGE_ID')
     id_empresa = card.get('COMPANY_ID')
-    motivo = card.get('UF_CRM_1771270522210')
+    motivo = card.get('UF_CRM_1771605448121')
     if not id_empresa:
         return JSONResponse(
             {
@@ -125,7 +125,7 @@ async def reprovar_cadastro(id: str):
     bitrix.deal_update(equivalente_id, 
         {
             "STAGE_ID": "C2:LOSE",
-            "UF_CRM_1771270522210": motivo
+            "UF_CRM_1771605448121": motivo
         }
     )
 

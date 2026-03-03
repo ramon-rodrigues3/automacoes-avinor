@@ -59,7 +59,10 @@ async def validar_cadastro(id: str):
 
     bitrix.deal_update(equivalente_id, 
         {
-            "STAGE_ID": "C2:UC_P7EWZH"
+            "STAGE_ID": "C2:UC_P7EWZH",
+            "UF_CRM_1772538690100": equivalente.get("UF_CRM_1772538690100"),
+            "UF_CRM_1772539021719": equivalente.get("UF_CRM_1772539021719"),
+            "UF_CRM_1772539131978": equivalente.get("UF_CRM_1772539131978")
         }
     )
 
